@@ -6,6 +6,7 @@ import DashFundWallet from "../Dashboard/DashFundWallet";
 // import DashBoardHome from "../Dashboard/DashBoardHome";
 import DashHeader from "../Dashboard/DashHeader";
 import DashHomeComp from "../Dashboard/DashHome/DashHomeComp";
+import DashSettings from "../Dashboard/DashSettings";
 import DashSiderBar from "../Dashboard/DashSiderBar";
 import DashTransPage from "../Dashboard/DashTransPage";
 
@@ -31,6 +32,10 @@ const UserRoutes = () => {
         {
             path: "/fundwallet",
             element: <DashFundWallet />,
+        },
+        {
+            path: "/settings",
+            element: <DashSettings />,
         },
     ])
 

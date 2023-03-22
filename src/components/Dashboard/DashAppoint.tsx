@@ -102,8 +102,8 @@ const DashAppointment = () => {
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>S/N</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor's Name</Names>
-                        {/* <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Email</Names>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Scenario</Names> */}
+                        {/* <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Email</Names> */}
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Specialist</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Date</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Time</Names>
                     </Top>
@@ -114,6 +114,7 @@ const DashAppointment = () => {
                             <Name src="/images/avatar.png" />
                         </Names>
                         <Names>Allison Jordan</Names>
+                        <Names>Dentist</Names>
                         <Names>01:00am</Names>
                         <Names>Mar. 10, 2023</Names>
                     </Top>
@@ -124,6 +125,7 @@ const DashAppointment = () => {
                             <Name src="/images/avatar.png"  />
                         </Names>
                         <Names>Bola Akin</Names>
+                        <Names>Optician</Names>
                         <Names>02:30am</Names>
                         <Names>Mar. 12, 2023</Names>
                     </Top>

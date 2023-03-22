@@ -54,7 +54,7 @@ const DashHomeTrans = () => {
                         <Names>Mar. 10, 2023</Names>
                     </Top>
 
-                    <NavLink style={{textDecoration:"none", color:""}} to="/"><See>See All Agents</See></NavLink>
+                    <NavLink style={{textDecoration:"none", color:""}} to="/"><See>See All Transactions</See></NavLink>
 
 
                 </Contain>

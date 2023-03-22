@@ -55,7 +55,7 @@ const SideBar = () => {
                         <HomeText>Fund Wallet</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/settings"><Home>
                         <Icon>
                             <AiFillMessage />
                         </Icon>
