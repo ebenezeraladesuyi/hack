@@ -1,9 +1,13 @@
 import React from "react";
 import { useRoutes } from "react-router";
 import styled from "styled-components";
-import DashBoardHome from "../Dashboard/DashBoardHome";
+import DashAppointment from "../Dashboard/DashAppoint";
+import DashFundWallet from "../Dashboard/DashFundWallet";
+// import DashBoardHome from "../Dashboard/DashBoardHome";
 import DashHeader from "../Dashboard/DashHeader";
+import DashHomeComp from "../Dashboard/DashHome/DashHomeComp";
 import DashSiderBar from "../Dashboard/DashSiderBar";
+import DashTransPage from "../Dashboard/DashTransPage";
 
 
 const UserRoutes = () => {
@@ -14,16 +18,20 @@ const UserRoutes = () => {
     const element = useRoutes([
         {
             path: "/dashboardhome",
-            element: <DashBoardHome />,
+            element: <DashHomeComp />,
         },
-        // {
-        //     path: "/houseforsale",
-        //     element: <HouseSale />,
-        // },
-        // {
-        //     path: "/houseforrent",
-        //     element: <HouseRent />,
-        // },
+        {
+            path: "/transactions",
+            element: <DashTransPage />,
+        },
+        {
+            path: "/makeappointment",
+            element: <DashAppointment />,
+        },
+        {
+            path: "/fundwallet",
+            element: <DashFundWallet />,
+        },
     ])
 
     return (
@@ -95,7 +103,7 @@ const Body = styled.div`
 width: 100%;
 height: 100%;
 overflow: hidden;
-// background-color: black;
+background-color: #eaeaea;
 `;
 
 

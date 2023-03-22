@@ -199,7 +199,7 @@ padding-left: 10px;
 
 const Form = styled.form`
 width: 270px;
-height: 300px;
+height: 400px;
 box-shadow: 0 0 3px #6C63FF;
 border-radius: 10px 0 10px 0;
 padding: 30px;
