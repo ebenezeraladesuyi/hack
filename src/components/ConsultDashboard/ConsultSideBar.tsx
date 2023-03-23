@@ -22,7 +22,10 @@ const ConsultSideBar = () => {
 
                     <Admin>CONSULTANT</Admin>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consulthome"><Home>
+                    <NavLink to="/consulthome" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
                         <Icon>
                             <FaHome />
                         </Icon>
@@ -30,7 +33,10 @@ const ConsultSideBar = () => {
                         <HomeText>Home</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consulttransactions"><Home>
+                    <NavLink to="/consulttransactions" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
                         <Icon>
                             <MdPointOfSale />
                         </Icon>
@@ -38,7 +44,10 @@ const ConsultSideBar = () => {
                         <HomeText>Transactions</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consultappointment"><Home>
+                    <NavLink to="/consultappointment" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
                         <Icon>
                             <FiUsers />
                         </Icon>
@@ -46,7 +55,10 @@ const ConsultSideBar = () => {
                         <HomeText>Appointments</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consultwithdraw"><Home>
+                    <NavLink to="/consultwithdraw" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
                         <Icon>
                             <AiOutlineFund />
                         </Icon>
@@ -54,7 +66,10 @@ const ConsultSideBar = () => {
                         <HomeText>Withdraw</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/"><Home>
+                    <NavLink to="/" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
                         <Icon>
                             <AiFillMessage />
                         </Icon>
