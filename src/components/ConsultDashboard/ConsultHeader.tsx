@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import pics from "../Assets/Medical-logo.png";
 
-const DashHeader = () => {
+const ConsultHeader = () => {
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ const DashHeader = () => {
   );
 };
 
-export default DashHeader;
+export default ConsultHeader;
 
 // const User = styled.div``;
 

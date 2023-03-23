@@ -8,7 +8,7 @@ import { FiUsers } from "react-icons/fi";
 import  { NavLink } from "react-router-dom";
 
 
-const SideBar = () => {
+const ConsultSideBar = () => {
 
     return (
 
@@ -20,9 +20,9 @@ const SideBar = () => {
 
                 <Top>
 
-                    <Admin>USER</Admin>
+                    <Admin>CONSULTANT</Admin>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/dashboardhome"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consulthome"><Home>
                         <Icon>
                             <FaHome />
                         </Icon>
@@ -30,7 +30,7 @@ const SideBar = () => {
                         <HomeText>Home</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/transactions"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consulttransactions"><Home>
                         <Icon>
                             <MdPointOfSale />
                         </Icon>
@@ -38,23 +38,23 @@ const SideBar = () => {
                         <HomeText>Transactions</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/makeappointment"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consultappointment"><Home>
                         <Icon>
-                            <GoPerson />
+                            <FiUsers />
                         </Icon>
 
-                        <HomeText>Appointment</HomeText>
+                        <HomeText>Appointments</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/fundwallet"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/consultwithdraw"><Home>
                         <Icon>
                             <AiOutlineFund />
                         </Icon>
 
-                        <HomeText>Fund Wallet</HomeText>
+                        <HomeText>Withdraw</HomeText>
                     </Home></NavLink>
 
-                    <NavLink style={{textDecoration:"none", color:"white"}} to="/settings"><Home>
+                    <NavLink style={{textDecoration:"none", color:"white"}} to="/"><Home>
                         <Icon>
                             <AiFillMessage />
                         </Icon>
@@ -82,7 +82,7 @@ const SideBar = () => {
     )
 }
 
-export default SideBar;
+export default ConsultSideBar;
 
 // const DashHead = styled.div``;
 

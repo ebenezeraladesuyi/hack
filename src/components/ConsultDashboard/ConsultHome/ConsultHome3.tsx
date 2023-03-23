@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
 
-const DashAppointment = () => {
+const ConsultHome3 = () => {
 
     const [quick, setQuick] = React.useState(false)
 
@@ -34,30 +34,13 @@ const DashAppointment = () => {
 
         <Topp>
 
-            <Save>Book</Save>
-            <Enter>Enter an amount and a destination</Enter>
+            <Save>Re-Schedule</Save>
+            <Enter>Re-Schedule Appointment</Enter>
 
-            {/* <Tap>
-                <Label>Full Name</Label>
-
-                <Here type="" placeholder=''/>
-            </Tap>
-
-            <Tap>
-                <Label>Email</Label>
-
-                <Here type="" placeholder=''/>
-            </Tap> */}
-
-            <Label>Select Specialist</Label>
+            {/* <Label>Select Specialist</Label>
                  <Select name="" id="">
                 <option value="">Click To Select</option>
-                </Select>
-
-            <Label>Select Doctor</Label>  
-                <Select name="" id="">
-                <option value="">Click To Select</option>
-                </Select>
+                </Select> */}
 
             <Tap>
                 <Label>Complaint (Brief)</Label>
@@ -71,9 +54,15 @@ const DashAppointment = () => {
                 <Here type="date" placeholder=''/>
             </Tap>
 
+            <Tap>
+                <Label>Time</Label>
+
+                <Here type="time" placeholder=''/>
+            </Tap>
+
         </Topp>
 
-        <Proceed>Make Appointment</Proceed>
+        <Proceed>Send Re-Schedule</Proceed>
 
     </Quickk>
 
@@ -88,24 +77,25 @@ const DashAppointment = () => {
 
                 <Contain>
 
-                    <Fund>
+                    {/* <Fund>
                         <div></div>
 
                         <Button>
                             <Pay onClick={toggle2}>Book Appointment</Pay>
                         </Button>
-                    </Fund>
+                    </Fund> */}
 
-                    <div style={{fontSize:"18px", fontWeight:"700", marginTop:"20px", marginLeft:"20px"}}>Appointments</div>
+                    <div style={{fontSize:"18px", fontWeight:"700", marginTop:"30px", marginLeft:"20px"}}>Appointments</div>
 
                     <Top>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>S/N</Names>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor</Names>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor's Name</Names>
-                        {/* <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Email</Names> */}
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Specialist</Names>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Date</Names>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Time</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Patient</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Patient's Name</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Diagnosis</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Date & Time</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Accept</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Decline</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Re-Schedule</Names>
                     </Top>
 
                     <Top>
@@ -114,21 +104,46 @@ const DashAppointment = () => {
                             <Name src="/images/avatar.png" />
                         </Names>
                         <Names>Allison Jordan</Names>
-                        <Names>Dentist</Names>
-                        <Names>01:00am</Names>
-                        <Names>Mar. 10, 2023</Names>
+                        <Names>Eyes Issues</Names>
+                        <Names>03-13/01:00am</Names>
+
+                        <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names>
+                            <Namees >Accept</Namees>
+                        </Names></NavLink>
+
+                        <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names>
+                            <Namees >Decline</Namees>
+                        </Names></NavLink>
+
+                         <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names style={{ width:"100%"}}>
+                            <Namees>Re-Schedule</Namees>
+                        </Names></NavLink>
                     </Top>
 
                     <Top>
                         <Names>2</Names>
                         <Names>
-                            <Name src="/images/avatar.png"  />
+                            <Name src="/images/avatar.png" />
                         </Names>
-                        <Names>Bola Akin</Names>
-                        <Names>Optician</Names>
-                        <Names>02:30am</Names>
-                        <Names>Mar. 12, 2023</Names>
+                        <Names>Obi Shola</Names>
+                        <Names>Lens Request</Names>
+                        <Names>03-10/11:00am</Names>
+
+                        <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names>
+                            <Namees >Accept</Namees>
+                        </Names></NavLink>
+
+                         <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names>
+                            <Namees >Decline</Namees>
+                        </Names></NavLink>
+
+                        <NavLink style={{textDecoration:"none", width:"12%"}} to="/consultappointment"><Names style={{ width:"100%"}}>
+                            <Namees >Re-Schedule</Namees>
+                        </Names></NavLink>
                     </Top>
+
+                    
+                    <NavLink style={{textDecoration:"none", color:""}} to="/consultappointment"><See>See All Appointments</See></NavLink>
 
 
                 </Contain>
@@ -139,7 +154,7 @@ const DashAppointment = () => {
     )
 }
 
-export default DashAppointment;
+export default ConsultHome3;
 
 // const Fund = styled.div``;
 
@@ -151,7 +166,22 @@ export default DashAppointment;
 
 // const Fund = styled.div``;
 
-// const Fund = styled.div``;
+const Namees = styled.button`
+padding: 10px 10px;
+border: none;
+// background-color: #000000;
+background-color: rgba(123, 126, 126, 0.992);
+color: white;
+border-radius: 6px;
+cursor: pointer;
+font-weight: 700;
+
+:hover{
+    // border: 1px solid #000000;
+    background-color: #000000;
+    // color: #000000;
+}
+`;
 
 const Name = styled.img`
 width: 40px;
@@ -296,7 +326,7 @@ color: rgba(123, 126, 126, 0.992);
 width: 12%;
 height 40px;
 display: flex;
-justify-content: center;
+// justify-content: center;
 align-items: center;
 `;
 
