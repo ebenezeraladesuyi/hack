@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import pics from "../Assets/Medical-logo.png";
+import { AiOutlineMail } from "react-icons/ai";
 
 const ConsultHeader = () => {
   return (
@@ -11,7 +12,7 @@ const ConsultHeader = () => {
         <User>
 
           <Icon>
-            {/* < /> */}
+            <AiOutlineMail />
           </Icon>
 
           <UserLetter>F</UserLetter>
@@ -36,7 +37,13 @@ export default ConsultHeader;
 
 // const User = styled.div``;
 
-const Icon = styled.div``;
+const Icon = styled.div`
+font-size: 30px;
+color: #000000;
+margin-right: 20px;
+font-weight: 700;
+margin-top: 10px;
+`;
 
 const Username = styled.div`
 font-weight: 700;
