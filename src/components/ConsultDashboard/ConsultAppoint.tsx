@@ -110,10 +110,10 @@ const ConsultAppointment = () => {
                             <Namees >Accept</Namees>
                         </Names>
                         <Names>
-                            <Namees >Decline</Namees>
+                            <Namees style={{backgroundColor:"rgba(123, 126, 126, 0.992)"}}>Decline</Namees>
                         </Names>
                         <Names>
-                            <Namees onClick={toggle2
+                            <Namees style={{backgroundColor:"#000000"}} onClick={toggle2
                             }>Re-Schedule</Namees>
                         </Names>
                     </Top>
@@ -130,10 +130,10 @@ const ConsultAppointment = () => {
                             <Namees >Accept</Namees>
                         </Names>
                         <Names>
-                            <Namees >Decline</Namees>
+                            <Namees style={{backgroundColor:"rgba(123, 126, 126, 0.992)"}} >Decline</Namees>
                         </Names>
                         <Names>
-                            <Namees onClick={toggle2
+                            <Namees style={{backgroundColor:"#000000"}} onClick={toggle2
                             }>Re-Schedule</Namees>
                         </Names>
                     </Top>
@@ -162,8 +162,8 @@ export default ConsultAppointment;
 const Namees = styled.button`
 padding: 10px 10px;
 border: none;
-// background-color: #000000;
-background-color: rgba(123, 126, 126, 0.992);
+background-color: #F4511E;
+// background-color: rgba(123, 126, 126, 0.992);
 color: white;
 border-radius: 6px;
 cursor: pointer;

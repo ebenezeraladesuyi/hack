@@ -12,8 +12,8 @@ function App() {
       <AllRoutes />
 
 
-      {/* <UserRoutes /> */}
-      <ConsultRoutes />
+      <UserRoutes />
+      {/* <ConsultRoutes /> */}
 
 
     </div>

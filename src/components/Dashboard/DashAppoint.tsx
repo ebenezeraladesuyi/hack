@@ -259,11 +259,13 @@ transition: all 350ms ease-in-out;
 
 const Pay = styled.button`
 padding: 13px 13px;
-background-color: #a8ff37;
+// background-color: #a8ff37;
+background-color: #F4511E;
 font-weight: 700;
 border-radius: 5px;
 cursor: pointer;
 border: none;
+color: white;
 `;
 
 const Button = styled.div`

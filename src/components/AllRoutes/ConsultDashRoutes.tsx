@@ -46,6 +46,7 @@ const ConsultRoutes = () => {
                         <Head>
                          <ConsultHeader />
                         </Head>
+                        
                         <Bottom>
 
                         <Side>

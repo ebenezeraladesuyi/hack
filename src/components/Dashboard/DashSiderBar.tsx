@@ -5,6 +5,7 @@ import { MdPointOfSale  } from "react-icons/md";
 import { AiFillMessage, AiOutlineLogout, AiOutlineFund } from "react-icons/ai";
 import { GoPerson } from "react-icons/go";
 import { FiUsers } from "react-icons/fi";
+import { MdHealthAndSafety } from "react-icons/md";
 import  { NavLink } from "react-router-dom";
 
 
@@ -53,6 +54,17 @@ const SideBar = () => {
                         </Icon>
 
                         <HomeText>Appointment</HomeText>
+                    </Home></NavLink>
+
+                    <NavLink to="/hmo" style={({isActive}) => { return {
+                        textDecoration: isActive ? "none" : "none",
+                        color: isActive ? "#a8ff37" : "white",
+                    }}}><Home>
+                        <Icon>
+                            <MdHealthAndSafety />
+                        </Icon>
+
+                        <HomeText>HMO</HomeText>
                     </Home></NavLink>
 
                     <NavLink to="/fundwallet" style={({isActive}) => { return {

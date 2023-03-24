@@ -5,6 +5,7 @@ import DashAppointment from "../Dashboard/DashAppoint";
 import DashFundWallet from "../Dashboard/DashFundWallet";
 // import DashBoardHome from "../Dashboard/DashBoardHome";
 import DashHeader from "../Dashboard/DashHeader";
+import DashHMO from "../Dashboard/Dashhmo";
 import DashHomeComp from "../Dashboard/DashHome/DashHomeComp";
 import DashSettings from "../Dashboard/DashSettings";
 import DashSiderBar from "../Dashboard/DashSiderBar";
@@ -36,6 +37,10 @@ const UserRoutes = () => {
         {
             path: "/settings",
             element: <DashSettings />,
+        },
+        {
+            path: "/hmo",
+            element: <DashHMO />,
         },
     ])
 
