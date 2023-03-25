@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsFillCreditCardFill, BsQuestionCircleFill } from "react-icons/bs";
-import { RiLock2Fill } from "react-icons/ri";
 
 
 const DashHMO = () => {
@@ -64,6 +62,14 @@ font-weight: 700;
 margin-top: 20px;
 // margin-left: 30px;
 color: #F4511E;
+
+@media screen and (max-width: 425px) {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 360px) {
+    font-size: 12px;
+}
 `;
 
 const Text = styled.div`
@@ -91,6 +97,15 @@ font-weight: 700;
 text-align: center;
 width: 50%;
 margin-top: 40px;
+
+@media screen and (max-width: 425px) {
+    width: 70%;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 375px) {
+    width: 80%;
+}
 `;
 
 const Card = styled.div`
@@ -102,6 +117,20 @@ box-shadow: 0 0 3px gray;
 overflow: hidden;
 position: relative;
 cursor: pointer;
+
+@media screen and (max-width: 768px) {
+    height: 210px;
+}
+
+@media screen and (max-width: 425px) {
+    height: 260px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    height: 240px;
+}
 `;
 
 const Cards = styled.div`
@@ -112,6 +141,10 @@ margin-top: 20px;
 // margin-left: 20px;
 justify-content: space-between;
 // gap: 2rem;
+
+@media screen and (max-width: 425px) {
+    justify-content: center;
+}
 `;
 
 const Contain = styled.div`

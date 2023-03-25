@@ -198,6 +198,7 @@ margin-top: 20px;
 const Drop = styled.div`
 display: none;
 transition: all 350ms ease-in-out;
+z-index: 300;
 
 @media screen and (max-width: 768px) {
   display: flex;
@@ -216,6 +217,7 @@ border-radius: 10px 0 10px 0;
   @media screen and (max-width: 375px) {
     width: 250px;
     height: 370px;
+    right: 15px;
   }
 
   @media screen and (max-width: 320px) {
@@ -271,6 +273,10 @@ const User = styled.div`
 display: flex;
 align-items: center;
 margin-right: 25px;
+
+@media screen and (max-width: 375px) {
+  margin-right: 10px;
+}
 `;
 
 const Logo = styled.h5`

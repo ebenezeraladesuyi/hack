@@ -99,7 +99,7 @@ const DashAppointment = () => {
                     <div style={{fontSize:"18px", fontWeight:"700", marginTop:"20px", marginLeft:"20px"}}>Appointments</div>
 
                     <Top>
-                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>S/N</Names>
+                        <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000", width: "5%"}}>S/N</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor</Names>
                         <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Doctor's Name</Names>
                         {/* <Names style={{fontSize:"14px", fontWeight:"700", color:"#000000"}}>Email</Names> */}
@@ -109,7 +109,7 @@ const DashAppointment = () => {
                     </Top>
 
                     <Top>
-                        <Names>1</Names>
+                        <Names style={{width: "5%"}}>1</Names>
                         <Names>
                             <Name src="/images/avatar.png" />
                         </Names>
@@ -120,7 +120,7 @@ const DashAppointment = () => {
                     </Top>
 
                     <Top>
-                        <Names>2</Names>
+                        <Names style={{width: "5%"}}>2</Names>
                         <Names>
                             <Name src="/images/avatar.png"  />
                         </Names>
@@ -129,6 +129,38 @@ const DashAppointment = () => {
                         <Names>02:30am</Names>
                         <Names>Mar. 12, 2023</Names>
                     </Top>
+
+                    <MobTop>
+
+                        <Name src="/images/avatar.png"  />
+
+                        <Amount>
+                            <Date>Allison Jordan</Date>
+                            <Date>Dentist</Date>
+                        </Amount>
+
+                        <Amount style={{marginLeft:"20px", color:"rgba(123, 126, 126, 0.992)"}}>
+                            <Date style={{ fontSize:"11px"}}>01:00am</Date>
+                            <Date style={{ fontSize:"11px"}}>Mar. 10, 2023</Date>
+                        </Amount>
+
+                    </MobTop>
+
+                    <MobTop>
+
+                        <Name src="/images/avatar.png"  />
+
+                        <Amount>
+                            <Date>Bola Akin</Date>
+                            <Date>Optician</Date>
+                        </Amount>
+
+                        <Amount style={{marginLeft:"20px", color:"rgba(123, 126, 126, 0.992)"}}>
+                            <Date style={{ fontSize:"11px"}}>02:30am</Date>
+                            <Date style={{ fontSize:"11px"}}>Mar. 12, 2023</Date>
+                        </Amount>
+
+                    </MobTop>
 
 
                 </Contain>
@@ -147,17 +179,50 @@ export default DashAppointment;
 
 // const Fund = styled.div``;
 
-// const Fund = styled.div``;
+const Date = styled.div`
+font-size: 14px;
+font-weight: 700;
 
-// const Fund = styled.div``;
+@media screen and (max-width: 320px) {
+    font-size: 11px;
+}
+`;
 
-// const Fund = styled.div``;
+const Amount = styled.div`
+// margin-left: 20px;
+width: 45%;
+`;
+
+const MobTop = styled.div`
+display: none;
+
+@media screen and (max-width: 425px) {
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    border: none;
+    border-radius: 12px;
+    border-bottom: 2px solid rgba(123, 126, 126, 0.992);
+    // border-bottom: 1px solid #F4511E;
+    // border-top: 1px solid #000000;
+    margin-bottom: 10px;
+    // width: 85%;
+    height: 40px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 7px;
+`;
 
 const Name = styled.img`
 width: 40px;
 height: 40px;
 // border: 1px solid rgba(123, 126, 126, 0.992);
 border-radius: 50%;
+
+@media screen and (max-width: 425px) {
+    margin-right: 10px;
+}
 `;
 
 const Select = styled.select`
@@ -165,6 +230,11 @@ width: 100%;
 height: 47px;
 border-radius: 7px 7px 7px 0;
 padding-left: 10px;
+outline: none;
+
+@media screen and (max-width: 768px) {
+    height: 37px;
+}
 `;
 
 const Proceed = styled.button`
@@ -184,6 +254,10 @@ width: 96%;
 height: 100px;
 border-radius: 7px 7px 7px 0;
 padding-left: 10px;
+
+@media screen and (max-width: 768px) {
+   height: 80px;
+}
 `;
 
 const Here = styled.input`
@@ -191,6 +265,11 @@ width: 96%;
 height: 42px;
 border-radius: 7px 7px 7px 0;
 padding-left: 10px;
+outline: none;
+
+@media screen and (max-width: 768px) {
+    height: 34px;
+}
 `;
 
 const Label = styled.div`
@@ -199,6 +278,10 @@ margin-bottom: 7px;
 font-size: 12px;
 font-weight: 700;
 // color: gray;
+
+@media screen and (max-width: 768px) {
+    margin-top: 15px;
+}
 `;
 
 const Tap = styled.div`
@@ -216,6 +299,10 @@ const Save = styled.div`
 // color: #a8ff37;
 font-size: 23px;
 font-weight: 700;
+
+@media screen and (max-width: 768px) {
+    font-size: 17px;
+}
 `;
 
 const Topp = styled.div`
@@ -233,6 +320,10 @@ z-index: 100;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+
+@media screen and (max-width: 768px) {
+    width: 260px;
+}
 `;
 
 const Black = styled.div`
@@ -255,6 +346,11 @@ justify-content: space-between;
 background-color: #00000095;
 z-index: 300;
 transition: all 350ms ease-in-out;
+
+@media screen and (max-width: 768px) {
+    width: 100%;
+    // height: 100vh;
+}
 `;
 
 const Pay = styled.button`
@@ -266,6 +362,10 @@ border-radius: 5px;
 cursor: pointer;
 border: none;
 color: white;
+
+@media screen and (max-width: 375px) {
+    font-size: 12px;
+}
 `;
 
 const Button = styled.div`
@@ -309,6 +409,10 @@ margin-left: 20px;
 display: flex;
 justify-content: space-around;
 align-items: flex-start;
+ 
+@media screen and (max-width: 425px) {
+    display: none;
+}
 `;
 
 const Contain = styled.div`
