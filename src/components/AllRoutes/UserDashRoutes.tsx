@@ -2,6 +2,7 @@ import React from "react";
 import { useRoutes } from "react-router";
 import styled from "styled-components";
 import DashAppointment from "../Dashboard/DashAppoint";
+import DashFund from "../Dashboard/DashFund2";
 import DashFundWallet from "../Dashboard/DashFundWallet";
 // import DashBoardHome from "../Dashboard/DashBoardHome";
 import DashHeader from "../Dashboard/DashHeader";
@@ -41,6 +42,10 @@ const UserRoutes = () => {
         {
             path: "/hmo",
             element: <DashHMO />,
+        },
+        {
+            path: "/fund",
+            element: <DashFund />,
         },
     ])
 
@@ -91,12 +96,20 @@ export default UserRoutes;
 const DashRoute = styled.div`
 width: calc(100% - 275px);
 height: 100%;
+
+@media screen and (max-width: 768px) {
+    width: 100%;
+}
 `;
 
 const Side = styled.div`
 width: 250px;
 height: 100vh;
 postition: fixed;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 
 const Bottom = styled.div`

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsFillCreditCardFill, BsQuestionCircleFill } from "react-icons/bs";
+import { RiLock2Fill } from "react-icons/ri";
 
 
 const DashHMO = () => {

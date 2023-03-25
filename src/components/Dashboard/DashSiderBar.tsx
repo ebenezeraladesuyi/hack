@@ -67,7 +67,7 @@ const SideBar = () => {
                         <HomeText>HMO</HomeText>
                     </Home></NavLink>
 
-                    <NavLink to="/fundwallet" style={({isActive}) => { return {
+                    <NavLink to="/fund" style={({isActive}) => { return {
                         textDecoration: isActive ? "none" : "none",
                         color: isActive ? "#a8ff37" : "white",
                     }}}><Home>
